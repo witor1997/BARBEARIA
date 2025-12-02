@@ -1,14 +1,5 @@
 # Estilo Livre - Barbearia
 
-Projeto de site responsivo utilizando Bootstrap 5. Conteúdo de exemplo para entrega acadêmica.
-
-Estrutura do repositório:
-
-- index.html
-- css/style.css
-- img/ (imagens utilizadas)
-
-Como publicar (exemplo com PowerShell):
 
 ```powershell
 # Inicializar repositório
