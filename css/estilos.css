@@ -1,0 +1,37 @@
+/* Estilo customizado leve para a barbearia
+   Usa utilitários do Bootstrap sempre que possível.
+*/
+:root{
+  --brand: #0d6efd; /* azul primário do Bootstrap por padrão */
+  --dark-bg: #111214;
+}
+
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Hero/banner */
+.hero{
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+}
+
+/* Força contraste do texto sobre o banner quando necessário */
+.hero .lead{
+  color: rgba(255,255,255,0.9);
+}
+
+/* Pequenos ajustes para os cards */
+.card-img-top{
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Remover bordas do footer em telas pequenas */
+footer a{ text-decoration: none; }
+
+/* Media queries adicionais, quando necessário */
+@media (max-width: 576px){
+  .hero{ min-height: 360px; padding: 3rem 0; }
+}

@@ -3,26 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>estilo livre</title>
+    <title>Estilo Livre - Barbearia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+
+    <!-- Header / Navbar -->
     <header>
-        <nav class ="navbar navbar-expand-lg bg-body-tertiary"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#home">
+                    <img src="img/logotipo.png" alt="Barber with a welcoming smile holding scissors and comb in a cozy barbershop interior with the words Estilo Livre in bold modern lettering" width="48" height="48" class="me-2">
+                    <span class="fw-bold">Estilo Livre</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<div class="container-fluid">
-    <a class ="navbar-brand" href="#home">
-        <imag src=
-    </a>
-    
-</div>
-
-
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Depoimentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    </ul>
+                    <a class="btn btn-outline-light ms-lg-3" href="#contact">Agendar</a>
+                </div>
+            </div>
         </nav>
+    </header>
 
-            
-            </header>
+    <!-- Home / Hero -->
+    <section id="home" class="bg-dark text-white">
+        <div class="container-fluid px-0">
+            <div class="hero d-flex align-items-center text-center text-md-start" style="background-image: url('img/banner.svg');">
+                <div class="container py-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1 class="display-5 fw-bold">Estilo Livre - Barbearia</h1>
+                            <p class="lead mb-4">Cortes clássicos, barbas bem feitas e atendimento personalizado.</p>
+                            <a class="btn btn-primary btn-lg" href="#services">Conheça nossos serviços</a>
+                        </div>
+                        <div class="col-md-5 d-none d-md-block">
+                            <img src="img/maquina.png" alt="Barbeiro realizando corte de cabelo em cliente em ambiente de barbearia acolhedor, representando os serviços profissionais da Estilo Livre" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Sobre -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-md-6">
+                    <h2>Sobre Nós</h2>
+                    <p class="text-muted">Na Estilo Livre, reunimos tradição e técnica para proporcionar o melhor corte e cuidado com a sua barba. Nossa proposta é oferecer um ambiente acolhedor, serviços de qualidade e profissionais apaixonados pelo que fazem estamos com brinde e muito mais.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Atendimento personalizado</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Produtos de alta qualidade</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i> Ambiente confortável</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i> Brindes exclusivos</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/SOBRE.png" alt="Sobre" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Nossos Serviços</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card h-100">
+                        <img src="img/cortedecabelo.jpeg" class="card-img-top" alt="Corte de cabelo">
+                        <div class="card-body">
+                            <h5 class="card-title">Corte de Cabelo</h5>
+                            <p class="card-text text-muted">Técnicas modernas e clássicas para todos os estilos.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#contact" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card h-100">
+                        <img src="img/barba.jpeg" class="card-img-top" alt="Barba">
+                        <div class="card-body">
+                            <h5 class="card-title">Barba</h5>
+                            <p class="card-text text-muted">Modelagem, navalha e manutenção para sua barba ficar impecável.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#contact" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card h-100">
+                        <img src="img/hindratacao.jpeg" class="card-img-top" alt="Hidratação">
+                        <div class="card-body">
+                            <h5 class="card-title">Hidratação</h5>
+                            <p class="card-text text-muted">Tratamentos para cabelo e barba com produtos selecionados.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#contact" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos (Carrossel) -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Depoimentos</h2>
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <p class="mb-3">"Melhor barbearia da cidade! Profissionais atenciosos e cortes impecáveis."</p>
+                                <h6 class="mb-0">— João Silva</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <p class="mb-3">"Ambiente ótimo e preço justo. Recomendo para quem busca qualidade."</p>
+                                <h6 class="mb-0">— Carlos Pereira</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <p class="mb-3">"Atendimento rápido e excelente acabamento. Sempre volto!"</p>
+                                <h6 class="mb-0">— Marcelo Santos</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Contato</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Visite-nos</h5>
+                    <p class="text-muted"><Av class="GUARULHOS"></Av><br>Seg-Sex: 10:00 - 18:00</p>
+                    <div class="mt-4">
+                        <iframe src="https://maps.google.com/maps?q=São%20Paulo&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <small>&copy; <span id="year"></span> Estilo Livre. Todos os direitos reservados.</small>
+            <div>
+                <a href="#" class="text-white me-3">Facebook</a>
+                <a href="#" class="text-white">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualiza ano no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
